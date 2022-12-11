@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/graphik");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply max-w-[1440px] mx-auto tracking-tight;
+  }
+
+  h1 {
+    @apply font-graphik;
+  }
+
+  p {
+    @apply font-inter;
+  }
+  li {
+    @apply font-inter;
+  }
+  label {
+    @apply font-inter text-sm;
+  }
+}
+@layer components {
+  .header-title {
+    @apply text-[110px] font-semibold text-white text-center tracking-[-0.04em] leading-[120px];
+  }
+  .header-select__control css-13cymwt-control{
+    @apply !bg-transparent
+  }
+}
+
