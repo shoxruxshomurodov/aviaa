@@ -28,8 +28,11 @@
   .header-title {
     @apply text-[110px] font-semibold text-white text-center tracking-[-0.04em] leading-[120px];
   }
-  .header-select__control css-13cymwt-control{
-    @apply !bg-transparent
+  .header-select__control css-13cymwt-control {
+    @apply !bg-transparent;
   }
 }
 
+.header-select__single-value img {
+  display: none;
+}

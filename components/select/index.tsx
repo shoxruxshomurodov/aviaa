@@ -1,18 +1,9 @@
 import ReactSelect, { components } from "react-select";
-const OptionItem = (props) => {
+const Index = ({ ...rest }) => {
   return (
-    <components.Option {...props}>
-      <div className="flex  items-center">
-        {props.data.extra && <div className="mr-3">{props.data.extra}</div>}
-        <div>{props.data.label}</div>
-      </div>
-    </components.Option>
-  );
-};
-const Index = () => {
-  return (
-    <div className={"flex flex-col"}>
+    <div className={"flex flex-col min-w-[200px]"}>
       <ReactSelect
+        {...rest}
         classNamePrefix="header-select"
         defaultInputValue="Uz Airways"
         classNames={{
@@ -20,8 +11,13 @@ const Index = () => {
             return "!text-white !w-full";
           },
           control: (state) => {
-            return "!border-none !bg-transparent !shadow-none ";
+            return "!border-none !bg-transparent !shadow-none !min-h-min";
           },
+          menu: () => {
+            return "mt-4 relative after:absolute after:content-[attr(after)] after:bg-white -z-1 after:-top-2 after:w-7 after:h-7 after:left-4 after:rotate-45 after:rounded-[6px]";
+          },
+          menuList: () => "z-20",
+          singleValue: () => "!m-0 !text-[22px] !text-white",
           indicatorsContainer: () => "!hidden",
           input: () => {
             return "!m-0 !text-[22px] !text-white";
@@ -33,7 +29,6 @@ const Index = () => {
             return "!p-0";
           },
         }}
-        components={{ OptionItem, ...components }}
       />
     </div>
   );
