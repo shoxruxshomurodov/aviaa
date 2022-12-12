@@ -7,6 +7,7 @@ import { Shape, Variant } from "../enum";
 import Image from "next/image";
 import { arrowRight } from "../assets/images/icons";
 import { bgServices } from "../assets/images/section";
+
 const Index = () => {
   return (
     <>
@@ -90,16 +91,32 @@ const Index = () => {
             </Card>
           </div>
         </section>
-        <section className={"relative h-60"}>
+        <section className={"relative"}>
           <Image
             src={bgServices}
             layout="fill"
             objectFit="cover"
             quality={100}
             alt={"Arrow right"}
-            className={'-z-10'}
+            className={"-z-10"}
           />
-         <div></div>
+          <div className={"px-15 pb-[86px] pt-[250px]"}>
+            <Heading
+              title={"Aviachipta sotib olgandan keyingi xizmatlar"}
+              subTitle={
+                "Effortless time tracking and reporting. Save time and money with the time tracker trusted by more than 10,000 organizations."
+              }
+              className={"max-w-2xl mb-8"}
+              titleClass={"text-[50px] text-white leading-[60px]"}
+              subTitleClass={"text-base !text-white"}
+            />
+            <Button
+              variant={Variant.primary}
+              className={"px-15 py-3.5 text-[22px] text-black font-medium"}
+            >
+              Izlash
+            </Button>
+          </div>
         </section>
       </GuestLayout>
     </>

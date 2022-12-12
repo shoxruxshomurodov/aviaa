@@ -31,7 +31,7 @@ const Header = () => {
         </div>
       </nav>
       <div>
-        <div>
+        <div className={"relative"}>
           <header className="bg-primary-blue flex flex-col items-center justify-center py-24">
             <div className={"max-w-3xl"}>
               <h1 className="header-title">
@@ -90,7 +90,11 @@ const Header = () => {
                     value={"Kurbanov"}
                   />
                 </div>
-                <div className={"flex flex-col w-1/3 max-w-1/3  py-4  pl-6 px-4 w-full"}>
+                <div
+                  className={
+                    "flex flex-col w-1/3 max-w-1/3  py-4  pl-6 px-4 w-full"
+                  }
+                >
                   <label
                     className={"mb-[5px] text-white flex items-center gap-2"}
                   >
@@ -122,7 +126,7 @@ const Header = () => {
                 <Button
                   shape={Shape.round}
                   variant={Variant.primary}
-                  className="text-primary-black font-inter font-medium text-xl py-7 px-12 z-10"
+                  className="text-primary-black font-inter font-medium text-xl py-[30px] px-12 z-10"
                 >
                   Izlash
                 </Button>

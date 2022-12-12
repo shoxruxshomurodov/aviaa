@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React, { ReactElement, ReactNode } from "react";
-import { Variant, Shape, Size } from "../../../avia-help/enum";
-
+import { Variant, Shape, Size } from "../../enum";
 interface ButtonProps {
   variant?: Variant;
   size?: Size;
@@ -46,8 +45,8 @@ const Index: React.FC<ButtonProps> = ({
         className,
         variant && VARIANT_MAPS[variant],
         size && SIZE_MAPS[size],
-        shape && SHAPES_MAPS[shape],
-        "border-2 border-transparent"
+        shape ? SHAPES_MAPS[shape] : "rounded-[10px]",
+        "border-2 border-transparent "
       )}
     >
       {children}
