@@ -4,6 +4,8 @@ import cabinCareIcon from "./cabin.svg";
 import facebookIcon from "./facebook.svg";
 import instagrammIcon from "./instagramm.svg";
 import youtubeIcon from "./youtube.svg";
+import playIcon from "./play.svg";
+
 export {
   gamburgerIcon,
   arrowRight,
@@ -11,4 +13,5 @@ export {
   facebookIcon,
   instagrammIcon,
   youtubeIcon,
+  playIcon,
 };
