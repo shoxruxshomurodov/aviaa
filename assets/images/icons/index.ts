@@ -5,6 +5,10 @@ import facebookIcon from "./facebook.svg";
 import instagrammIcon from "./instagramm.svg";
 import youtubeIcon from "./youtube.svg";
 import playIcon from "./play.svg";
+import tabCabin from "./tab-cabin.svg";
+import tabMeal from "./tab-restaraunt.svg";
+import tabCase from "./tab-portfolio.svg";
+import tabPlane from "./tab-plane.svg";
 
 export {
   gamburgerIcon,
@@ -14,4 +18,8 @@ export {
   instagrammIcon,
   youtubeIcon,
   playIcon,
+  tabCabin,
+  tabMeal,
+  tabCase,
+  tabPlane,
 };

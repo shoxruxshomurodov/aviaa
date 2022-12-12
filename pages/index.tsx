@@ -16,11 +16,13 @@ import {
   uzAirway,
 } from "../assets/images/logos";
 import { Banner } from "../components/blocks/guest";
+import Tab from "../components/tab";
 
 const Index = () => {
   return (
     <GuestLayout>
       <Banner />
+      <Tab/>
       <section className={"px-[60px] mb-32"}>
         <Heading
           title={"Bizning Xizmatlar"}

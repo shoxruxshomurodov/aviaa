@@ -4,10 +4,8 @@ import Select from "../../select";
 import clsx from "clsx";
 import Image from "next/image";
 import { uzAirway } from "../../../assets/images/logos";
-import Input from "../../form/input";
 const Form = () => {
   const [openSelect, setOpenSelect] = useState(false);
-
   return (
     <form className={"flex gap-2 z-10"}>
       <div className={"flex bg-[#488FFB] rounded-xl"}>
@@ -22,11 +20,13 @@ const Form = () => {
           >
             Chipta raqami
           </label>
-          <InputMask mask={"999 9999999999"} defaultValue={"9989807789698"}>
-            {(inputProps: any) => {
-              return <Input {...inputProps} />;
-            }}
-          </InputMask>
+          <InputMask
+            mask={"999 9999999999"}
+            defaultValue={"9989807789698"}
+            className={
+              "bg-transparent focus:outline-none text-white font-medium text-[22px]"
+            }
+          />
         </div>
         <div
           className={
