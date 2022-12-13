@@ -14,14 +14,15 @@ const Index = ({ ...rest }) => {
             return "!border-none !bg-transparent !shadow-none !min-h-min";
           },
           menu: () => {
-            return "mt-4 relative after:absolute after:content-[attr(after)] after:bg-white -z-1 after:-top-2 after:w-7 after:h-7 after:left-4 after:rotate-45 after:rounded-[6px]";
+            return "z-[60] mt-4 relative after:absolute after:content-[attr(after)] after:bg-white after:-top-2 after:w-7 after:h-7 after:left-4 after:rotate-45 after:rounded-[6px]";
           },
-          menuList: () => "z-20",
+          menuList: () => "!z-[99999]",
           singleValue: () => "!m-0 !text-[22px] !text-white",
           indicatorsContainer: () => "!hidden",
           input: () => {
             return "!m-0 !text-[22px] !text-white";
           },
+          option: () => "z-[9999] !text-black !text-sm !font-inter",
           placeholder: () => {
             return "!m-0 !text-[22px] !text-white";
           },

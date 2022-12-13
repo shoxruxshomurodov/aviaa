@@ -4,6 +4,8 @@ import Select from "../../select";
 import clsx from "clsx";
 import Image from "next/image";
 import { uzAirway } from "../../../assets/images/logos";
+import { options } from "../../../mock/options";
+import { get, map, values } from "lodash";
 const Form = () => {
   const [openSelect, setOpenSelect] = useState(false);
   return (
@@ -84,17 +86,17 @@ const Form = () => {
           </label>
           <Select
             menuIsOpen={openSelect}
-            options={[
-              {
+            options={map(options, (option) => {
+              return {
                 label: (
-                  <div className={"flex"}>
-                    <Image src={uzAirway} alt={"logo"} />
-                    asdasd
+                  <div className={'flex items-center gap-3'}>
+                    <Image src={get(option, "icon")} alt={"Icon"} />
+                    {get(option, "title")}
                   </div>
                 ),
-                value: "uz",
-              },
-            ]}
+                value: get(option, "title"),
+              };
+            })}
           />
         </div>
       </div>

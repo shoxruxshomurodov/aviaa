@@ -6,7 +6,7 @@ import { footer, footerLinks } from "../../../mock";
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-12 gap-5 pb-10 px-5 md:px-16">
+    <footer className="grid grid-cols-12 gap-5 px-5 md:px-16">
       <div className="col-span-12 md:col-span-5 xl:col-span-4 bg-primary-black xl:px-14 pt-5 lg:pt-14 pb-7 text-white rounded-2xl flex flex-col items-center">
         <Image src={logoImg} alt={"logo"} />
         <p className="mb-3 mt-6 md:mt-14 text-center">

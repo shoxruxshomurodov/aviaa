@@ -18,6 +18,7 @@ const tabs = [
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState(0);
+
   return (
     <nav
       className={
